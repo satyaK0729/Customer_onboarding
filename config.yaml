@@ -1,0 +1,64 @@
+# Database Configuration
+database:
+  host: "localhost"
+  port: 5432
+  database: "onboarding_analytics"
+  user: "postgres"
+  password: "your_password_here"
+  
+# Data Paths
+paths:
+  raw_data: "data/raw/"
+  processed_data: "data/processed/"
+  reports: "reports/"
+  logs: "logs/"
+
+# Data Generation Settings
+data_generation:
+  num_records: 10000
+  start_date: "2023-01-01"
+  end_date: "2024-12-31"
+  
+# Analysis Parameters
+analysis:
+  risk_threshold: 0.7
+  approval_threshold: 0.6
+  processing_time_threshold_hours: 48
+  
+# KYC Document Types
+kyc_documents:
+  - "aadhaar"
+  - "pan"
+  - "passport"
+  - "driving_license"
+  - "voter_id"
+  
+# Fraud Detection Parameters
+fraud_detection:
+  high_risk_threshold: 0.75
+  medium_risk_threshold: 0.50
+  features:
+    - "age"
+    - "income_bracket"
+    - "document_quality_score"
+    - "verification_attempts"
+    - "device_fingerprint_match"
+    
+# Report Settings
+reporting:
+  frequency: "daily"
+  recipients:
+    - "analytics@company.com"
+    - "compliance@company.com"
+  format: "pdf"
+  
+# Dashboard Refresh
+dashboard:
+  refresh_interval_minutes: 30
+  cache_timeout_minutes: 60
+  
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/onboarding_analytics.log"

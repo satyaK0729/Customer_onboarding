@@ -1,0 +1,20 @@
+data/raw/*.csv
+data/processed/*.csv
+
+# Ignore generated HTML files
+reports/visualizations/*.html
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!reports/visualizations/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
